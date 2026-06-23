@@ -1,4 +1,4 @@
-﻿
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Infrastructure.Data;
@@ -15,7 +15,7 @@ namespace Infrastructure
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
        
-            var connectionString = "Host=localhost;Port=5433;Database=RealEstateDB;Username=postgres;Password=postgres;";
+            var connectionString = "Host=localhost;Port=5432;Database=RealEstateDB;Username=postgres;Password=123456;";
             optionsBuilder.UseNpgsql(connectionString);
 
             return new AppDbContext(optionsBuilder.Options);
