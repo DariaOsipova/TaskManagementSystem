@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using Microsoft.OpenApi.Models;
 using Application.Interfaces;
@@ -29,7 +29,7 @@ builder.Services.AddSwaggerGen(c =>
 
 // Настраиваем бд
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Database=PropertyManagerDb;Username=postgres;Password=password;"));
+    options.UseNpgsql("Host=localhost;Port=5432;Database=PropertyManagerDb;Username=postgres;Password=123456;"));
 
 // Регистрируем сервисы и репозитории
 //AddScoped - Один экземпляр на область (scope)
